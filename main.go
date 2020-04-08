@@ -27,10 +27,13 @@ func main() {
 	r.LoadHTMLFiles(files...)
 
 	// Set / route
-	// TODO: Properly template page
+	// TODO: add an easy way to add points; possibly markdown
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", map[string]interface{}{
 			"title": "5G",
+			"points": map[string]string{
+				"test": "testy",
+			},
 		})
 	})
 

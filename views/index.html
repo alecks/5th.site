@@ -8,6 +8,11 @@
     <title>{{ .title }}</title>
 </head>
 <body>
-    {{ .title }}
+    <h1>{{ .title }}</h1>
+
+    {{ range $heading, $content := .points }}
+        <h2>{{ $heading }}</h2>
+        <p>{{ $content }}</p>
+    {{ end }}
 </body>
 </html>

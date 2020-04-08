@@ -2,23 +2,44 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"io/ioutil"
+	"net/http"
 	"path"
+	"strings"
 )
 
 func main() {
 	// Create router (debug)
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
+	r.Delims("{{", "}}")
+
+	dir, err := ioutil.ReadDir("views")
+	chk(err)
+
+	var files []string
+	for _, v := range dir {
+		name := v.Name()
+		if strings.HasSuffix(name, ".html") {
+			files = append(files, path.Join("views", name))
+		}
+	}
+	r.LoadHTMLFiles(files...)
 
 	// Set / route
-	// TODO: template page
+	// TODO: Properly template page
 	r.GET("/", func(c *gin.Context) {
-		c.File(path.Join("views", "index.html"))
+		c.HTML(http.StatusOK, "index.html", map[string]interface{}{
+			"title": "5G",
+		})
 	})
 
 	// Start server
-	err := r.Run(":80")
-	if err != nil {
-		panic(err)
+	chk(r.Run(":80"))
+}
+
+func chk(e error) {
+	if e != nil {
+		panic(e)
 	}
 }

@@ -9,10 +9,13 @@
     <title>{{ .title }}</title>
 </head>
 <body>
+    <!-- TODO: Add navbar with ID links to parts of this page -->
     <h1>{{ .title }}</h1>
 
-    {{ range $content := .points }}
-        {{ $content }}
+    {{ range $id, $content := .points }}
+        <div id="{{ $id }}">
+            {{ $content }}
+        </div>
     {{ end }}
 </body>
 </html>

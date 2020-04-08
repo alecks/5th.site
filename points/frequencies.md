@@ -3,7 +3,7 @@
 
 All types of electromagnetic radiation fall on the Electromagnetic Spectrum. When looking at it, one may be shocked to see that 5G and other communications fall scarily close to the frequency of microwaves, at about 3.4GHz-3.6GHz. This is almost the same as that of 4G which is around 2.6GHz.
 
-![BBC Electromagnetic Spectrum](/assets/_107885890_5ggraphic-nc.png)
+![BBC Electromagnetic Spectrum](/assets/5G_Labelled_EM_Spectrum)
 
 *Courtesy BBC/SCAMP/Imperial College London/EBU*
 

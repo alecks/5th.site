@@ -69,12 +69,12 @@ p {
 
 img {
     border-radius: 0.5em;
-    max-height: 50vw;
+    max-height: 50vh;
     align-self: center;
     transition: 0.5s;
 }
 img:hover {
-    border-radius: 1em;
+    border-radius: 2em;
     transition: 0.5s;
 }
 

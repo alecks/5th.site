@@ -10,9 +10,9 @@
 <body>
     <h1>{{ .title }}</h1>
 
-    {{ range $heading, $content := .points }}
-        <h2>{{ $heading }}</h2>
-        <p>{{ $content }}</p>
+    {{ range $content := .points }}
+        <!-- TODO: Make this actually render. -->
+        {{ $content }}
     {{ end }}
 </body>
 </html>

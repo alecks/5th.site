@@ -2,17 +2,23 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"gitlab.com/golang-commonmark/markdown"
 	"io/ioutil"
 	"net/http"
 	"path"
 	"strings"
 )
 
+var md *markdown.Markdown
+
 func main() {
 	// Create router (debug)
 	gin.SetMode(gin.DebugMode)
 	r := gin.Default()
 	r.Delims("{{", "}}")
+
+	// TODO: add options
+	md = markdown.New()
 
 	dir, err := ioutil.ReadDir("views")
 	chk(err)
@@ -29,11 +35,11 @@ func main() {
 	// Set / route
 	// TODO: add an easy way to add points; possibly markdown
 	r.GET("/", func(c *gin.Context) {
+		points := getPoints()
+
 		c.HTML(http.StatusOK, "index.html", map[string]interface{}{
-			"title": "5G",
-			"points": map[string]string{
-				"test": "testy",
-			},
+			"title":  "5G",
+			"points": points,
 		})
 	})
 

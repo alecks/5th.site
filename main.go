@@ -33,7 +33,6 @@ func main() {
 	r.LoadHTMLFiles(files...)
 
 	// Set / route
-	// TODO: add an easy way to add points; possibly markdown
 	r.GET("/", func(c *gin.Context) {
 		points := getPoints()
 

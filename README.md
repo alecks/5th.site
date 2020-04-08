@@ -16,7 +16,7 @@ make sure it follows points/example.md's style.
 ## Hosting
 
 While hosting the website isn't exactly required in the slightest,
-you're able to easily with Docker.
+you're able to easily with [Docker](https://hub.docker.com/r/alexeek/5g).
 
 ```shell script
 $ docker run -it --rm -p 80:80 --name 5g alexeek/5g

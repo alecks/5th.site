@@ -1,19 +1,20 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"gitlab.com/golang-commonmark/markdown"
 	"io/ioutil"
 	"net/http"
 	"path"
 	"strings"
+
+	"github.com/gin-gonic/gin"
+	"gitlab.com/golang-commonmark/markdown"
 )
 
 var md *markdown.Markdown
 
 func main() {
-	// Create router (debug)
-	gin.SetMode(gin.DebugMode)
+	// Create router (release)
+	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 	r.Delims("{{", "}}")
 

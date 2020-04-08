@@ -9,9 +9,8 @@ Written in Go with its template lib.
 
 You're able to contribute by making PRs (pull requests).
 
-Sections are called "points".
-Simply add a markdown file to the /points folder;
-make sure it follows points/example.md's style.
+To add a question/answer to the homepage, create a new file in the `points` directory.
+Make sure the contents follow that of `points/example.md`.
 
 ## Hosting
 

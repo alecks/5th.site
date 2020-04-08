@@ -1,9 +1,12 @@
 FROM golang:alpine
 
-WORKDIR /go/src/5G
+WORKDIR /go/src/5g
 COPY . .
 
-RUN go get -d -v ./...
-RUN go install -v ./...
+RUN apk add git
+RUN go get -v .
+RUN go build -v .
 
-CMD ["5g"]
+ENTRYPOINT ["/go/src/5g/5g"]
+
+EXPOSE 80

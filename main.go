@@ -18,7 +18,7 @@ func main() {
 	r.Delims("{{", "}}")
 
 	// TODO: add options
-	md = markdown.New()
+	md = markdown.New(markdown.HTML(true))
 
 	dir, err := ioutil.ReadDir("views")
 	chk(err)
@@ -37,9 +37,13 @@ func main() {
 		points := getPoints()
 
 		c.HTML(http.StatusOK, "index.html", map[string]interface{}{
-			"title":  "5G",
+			"title":  "The Fifth Site - Answering your questions about 5G.",
 			"points": points,
 		})
+	})
+	// Set /assets/:file route
+	r.GET("/assets/:file", func(c *gin.Context) {
+		c.File(path.Join("assets", c.Param("file")))
 	})
 
 	// Start server

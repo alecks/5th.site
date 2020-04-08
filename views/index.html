@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ .title }}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/main.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-left">5G epic society</div>
-        </nav>
-        <div class="head-container">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            idk like put a graphic here or something 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+    <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+<nav>
+    <div class="nav-left">{{ .title }}</div>
+</nav>
+<div class="head-container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>5G doesn't fry your brain.</h1>
+    <br />
+    <p>
+        People think 5G will fry their children. No, I'm not joking.
+        This is simply to prove them wrong.
+    </p>
+    <img src="/assets/5gmast.jpeg" alt="5G mast">
+</div>
+<div class="text-area">
+    {{ range $id, $content := .points }}
+        <div class="q-cont" id="{{ $id }}">
+            {{ $content }}
         </div>
-        <div class="text-area">
-            <div class="q-cont">
-                <h1 id="question">Q: Will 5G fry my children like chips?</h1>
-                <p id="short-ans">A: Yes Karen, you fucking dimwit.</p>
-                <p id="extended-ans">You're a fucking idiot karen go shag ur kids and that innit lmao u mong Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img id="image-ans" src="https://lh3.googleusercontent.com/proxy/FO_wH8A5TH90wlIoZuwICgBPTWmr8w1TwKODputcNPfcVoVuyBo7UlQRWvFUvyt9BcWi3pHL9zphYY0xiKQ85ifeUs4kOxhRablQ5_Lk0SAKFoZIGAt-n2DIq3YPmQPMretV-Oj5qTsCecp28A">
-                <p id="image-sub">SRC: Big Bad Boris Johnson!</p>
-            </div>
-            <div class="q-cont">
-                <h1 id="question">Q: Will 5G fry my children like chips?</h1>
-                <p id="short-ans">A: Yes Karen, you fucking dimwit.</p>
-                <p id="extended-ans">You're a fucking idiot karen go shag ur kids and that innit lmao u mong Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </body>
+    {{ end }}
+</div>
+</body>
+</html>

@@ -42,7 +42,7 @@ nav {
     margin: 0;
 }
 
-#question {
+h1 {
     margin: 0;
     padding: 0% 0% 2% 0%;
 
@@ -50,7 +50,7 @@ nav {
     border-bottom: 1px solid rgb(228, 225, 225);
 }
 
-#short-ans {
+h2 {
     margin: 0;
     padding: 2% 0% 2% 0%;
 
@@ -58,7 +58,7 @@ nav {
     font-weight: 500;
 }
 
-#extended-ans {
+p {
     margin: 0;
     padding: 0% 0% 2% 0%; 
 
@@ -66,13 +66,13 @@ nav {
     font-weight: 300;
 }
 
-#image-ans {
-
+img {
+    border-radius: 2%;
     width: 50vw;
     align-self: center;
 }
 
-#image-sub {
+em {
     margin: 0;
     padding: 0.2% 0% 0% 1%;
 

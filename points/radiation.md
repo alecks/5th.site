@@ -9,4 +9,4 @@ All types of electromagnetic radiation fall on the Electromagnetic Spectrum. Whe
 *Courtesy of BBC/SCAMP/Imperial College London/EBU*
 
 
-This, however, is not as concerning as it may seem. 5G transmitters have a power of AT MOST 40 Watts, this is much less than the power you may find in your home microwave, which ranges from cheap 700 watt microwaves up to 1200w range units. If 40 Watts still seems a lot to you, by the time the radiation reaches your body, this will be 0.001 watts or less thanks to the inverse square law! Yay science.
+This, however, is not as concerning as it may seem. 5G transmitters have a power of AT MOST 40 watts; this is much less than the power you may find in your home microwave, which ranges from cheap 700 watt microwaves up to 1200 watt range units. If 40 watts still seems a lot to you, by the time the radiation reaches your body, this will be 0.001 watts or less thanks to the inverse square law.

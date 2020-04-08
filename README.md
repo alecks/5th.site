@@ -1,5 +1,7 @@
 # 5G
 
+![Go Build](https://github.com/elitisgroup/5G/workflows/Go%20Build/badge.svg)
+
 A website in favour of 5G; we love fake news.
 Written in Go with its template lib.
 

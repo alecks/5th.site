@@ -1,9 +1,9 @@
 # Q: Can 5G's radiation harm me?
-## A: Nope. Definitely not.
+## A: No! It's much the same as 4G, 3G and other standards before, nothing harmful.
 
-The frequency at which 5G in the UK sits is generally 3.4GHz-3.6GHz. This is a tiny difference in comparison to 4G's frequency; it sits at a maximum of 2.6GHz. Visible light literally comes in at a frequency more than 100,000 times higher than that of 5G, and 1,000 times more than the microwave with the highest frequency.
+All types of electromagnetic radiation fall on the Electromagnetic Spectrum. When looking at it, one may be shocked to see that 5G and other communications fall scarily close to the frequency of microwaves, at about 3.4GHz-3.6GHz. This is almost the same as that of 4G which is around 2.6GHz.
 
-There's no proof showing that the radiation coming off of 5G is harmful. It's non-ionising.
+![BBC Electromagnetic Spectrum](/assets/5G_Labelled_EM_Spectrum.png)
+*Courtesy BBC/SCAMP/Imperial College London/EBU*
 
-![Electromagnetic Spectrum](/assets/espectrum.jpg)
-*Courtesy of HKO*
+This, however, is not as concerning as it may seem. 5G transmitters have a power of AT MOST 40 Watts, this is much less than the power you may find in your home microwave, which is up to 800 Watts in some models. If 40 Watts still seems a lot to you, by the time the radiation reaches your body, this will be 0.001 of a Watt or less meaning no harm to you is done.

@@ -11,7 +11,7 @@ func main() {
 	r := gin.Default()
 
 	// Set / route
-	// TODO: render page
+	// TODO: template page
 	r.GET("/", func(c *gin.Context) {
 		c.File(path.Join("views", "index.html"))
 	})

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;300&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+nav {
+    height: 7.5vh;
+    width: 100vw;
+    border-bottom: 1px solid rgb(228, 225, 225);
+    position: fixed;
+    background-color: white;
+    text-align: left;
+}
+
+.nav-left {
+    height: 100%;
+    padding:1.5%;
+    display: inline-block;
+}
+
+.head-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    position: inherit;
+    text-align: center;
+}
+
+.text-area {
+    height: 100%;
+    width: 50vw;
+    text-align: left;
+    display: inline-block;
+}
+
+.q-cont {
+    padding: 3% 0% 0% 0%;
+    margin: 0;
+}
+
+#question {
+    margin: 0;
+    padding: 0% 0% 2% 0%;
+
+    font-size: 25pt;
+    border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+#short-ans {
+    margin: 0;
+    padding: 2% 0% 2% 0%;
+
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+#extended-ans {
+    margin: 0;
+    padding: 0% 0% 2% 0%; 
+
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+#image-ans {
+
+    width: 50vw;
+    align-self: center;
+}
+
+#image-sub {
+    margin: 0;
+    padding: 0.2% 0% 0% 1%;
+
+    font-size: 10pt;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {
+    .text-area{width: 95vw;}
+}

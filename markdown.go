@@ -15,7 +15,7 @@ func getPoints() []template.HTML {
 
 	for _, v := range dir {
 		name := v.Name()
-		if strings.HasSuffix(name, ".md") {
+		if name != "example.md" && strings.HasSuffix(name, ".md") {
 			bytes, err := ioutil.ReadFile(path.Join("points", name))
 			chk(err)
 

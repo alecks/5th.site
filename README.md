@@ -9,4 +9,4 @@ You're able to contribute by making PRs (pull requests).
 
 Sections are called "points".
 Simply add a markdown file to the /points folder;
-make sure it follows others' style.
+make sure it follows points/example.md's style.

@@ -17,6 +17,8 @@ Make sure the contents follow that of `points/example.md`.
 While hosting the website isn't exactly required in the slightest,
 you're able to easily with [Docker](https://hub.docker.com/r/alexeek/5g).
 
+Run the following command:
+
 ```shell script
 $ docker run -it --rm -p 80:80 --name 5g alexeek/5g
 ```

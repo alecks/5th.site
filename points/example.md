@@ -5,3 +5,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![An Image](https://lh3.googleusercontent.com/proxy/FO_wH8A5TH90wlIoZuwICgBPTWmr8w1TwKODputcNPfcVoVuyBo7UlQRWvFUvyt9BcWi3pHL9zphYY0xiKQ85ifeUs4kOxhRablQ5_Lk0SAKFoZIGAt-n2DIq3YPmQPMretV-Oj5qTsCecp28A)
 *Courtesy of Jahseh Onfroy*
+
+[This is a link to another post.](#example.md)

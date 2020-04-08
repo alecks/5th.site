@@ -11,6 +11,7 @@ func main() {
 	r := gin.Default()
 
 	// Set / route
+	// TODO: render page
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "200/OK")
 	})

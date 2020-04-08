@@ -1,16 +1,17 @@
 package main
 
 import (
+	"html/template"
 	"io/ioutil"
 	"path"
 	"strings"
 )
 
-func getPoints() []string {
+func getPoints() []template.HTML {
 	dir, err := ioutil.ReadDir("points")
 	chk(err)
 
-	var res []string
+	var res []template.HTML
 
 	for _, v := range dir {
 		name := v.Name()
@@ -18,7 +19,7 @@ func getPoints() []string {
 			bytes, err := ioutil.ReadFile(path.Join("points", name))
 			chk(err)
 
-			res = append(res, md.RenderToString(bytes))
+			res = append(res, template.HTML(md.RenderToString(bytes)))
 		}
 	}
 

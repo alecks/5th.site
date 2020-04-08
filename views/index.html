@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- TODO: Styling -->
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -11,7 +12,6 @@
     <h1>{{ .title }}</h1>
 
     {{ range $content := .points }}
-        <!-- TODO: Make this actually render. -->
         {{ $content }}
     {{ end }}
 </body>

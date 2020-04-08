@@ -5,22 +5,20 @@ body, html {
     font-family: 'roboto', sans-serif;
     overflow-x: hidden;
     text-align: center;
-    font-size: 12px;
-    background-color: white;
 }
 
 nav {
-    height: auto;
-    padding: 0.5em;
-    width: 100%;
+    height: 7.5vh;
+    width: 100vw;
     border-bottom: 1px solid rgb(228, 225, 225);
     position: fixed;
+    background-color: white;
     text-align: left;
 }
 
 .nav-left {
     height: 100%;
-    padding:0.1em;
+    padding:1.5%;
     display: inline-block;
 }
 
@@ -33,21 +31,22 @@ nav {
 }
 
 .text-area {
-    width: 60%;
+    height: 100%;
+    width: 50vw;
     text-align: left;
     display: inline-block;
 }
 
 .q-cont {
-    padding: 3% 0 0 0;
+    padding: 3% 0% 0% 0%;
     margin: 0;
 }
 
 h1 {
     margin: 0;
-    padding: 0 0 2% 0;
+    padding: 0% 0% 2% 0%;
 
-    font-size: 2em;
+    font-size: 25pt;
     border-bottom: 1px solid rgb(228, 225, 225);
 }
 
@@ -55,7 +54,7 @@ h2 {
     margin: 0;
     padding: 2% 0% 2% 0%;
 
-    font-size: 1.7em;
+    font-size: 14pt;
     font-weight: 500;
 }
 
@@ -63,32 +62,27 @@ p {
     margin: 0;
     padding: 0% 0% 2% 0%; 
 
-    font-size: 1.2em;
+    font-size: 13pt;
     font-weight: 300;
 }
 
 img {
-    border-radius: 0.5em;
-    max-height: 50vw;
+    border-radius: 2%;
+    width: 50vw;
     align-self: center;
-    transition: 0.5s;
-}
-img:hover {
-    border-radius: 1em;
-    transition: 0.5s;
 }
 
 em {
     margin: 0;
-    padding: 0.2% 0 0 1%;
+    padding: 0.2% 0% 0% 1%;
 
-    font-size: 1em;
+    font-size: 10pt;
     font-weight: 500;
     font-style: italic;
 }
 
 footer {
-    padding: 1em;
+    height: 25vh;
     width: 100vw;
     background-color: rgb(238, 238, 238);
 }

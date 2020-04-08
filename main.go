@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
+	"path"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	// Set / route
 	// TODO: render page
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "200/OK")
+		c.File(path.Join("views", "index.html"))
 	})
 
 	// Start server

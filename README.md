@@ -19,6 +19,5 @@ While hosting the website isn't exactly required in the slightest,
 you're able to easily with Docker.
 
 ```shell script
-$ docker pull alexeek/5g
 $ docker run -it --rm -p 80:80 --name 5g alexeek/5g
 ```

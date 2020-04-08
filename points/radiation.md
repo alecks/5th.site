@@ -1,4 +1,4 @@
-# Q: Are 5G frequencies harmful?
+# Q: Can 5G's radiation harm me?
 ## A: No! It's much the same as 4G, 3G and other standards before, nothing harmful.
 
 All types of electromagnetic radiation fall on the Electromagnetic Spectrum. When looking at it, one may be shocked to see that 5G and other communications fall scarily close to the frequency of microwaves, at about 3.4GHz-3.6GHz. This is almost the same as that of 4G which is around 2.6GHz.

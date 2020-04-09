@@ -20,14 +20,18 @@ func main() {
 
 	md = markdown.New(markdown.HTML(true))
 
-	dir, err := ioutil.ReadDir("views")
-	chk(err)
+	dirs := []string{"views", "partials"}
 
 	var files []string
-	for _, v := range dir {
-		name := v.Name()
-		if strings.HasSuffix(name, ".html") {
-			files = append(files, path.Join("views", name))
+	for _, d := range dirs {
+		read, err := ioutil.ReadDir(d)
+		chk(err)
+
+		for _, v := range read {
+			name := v.Name()
+			if strings.HasSuffix(name, ".html") {
+				files = append(files, path.Join(d, name))
+			}
 		}
 	}
 	r.LoadHTMLFiles(files...)
@@ -49,8 +53,9 @@ func main() {
 	// TODO: Handle all errors like this
 	r.NoRoute(func(c *gin.Context) {
 		c.HTML(http.StatusNotFound, "error.html", map[string]interface{}{
-			"errorCode":    http.StatusNotFound,
-			"errorMessage": "Not Found", // Removed as it would return same val: http.StatusText(http.StatusNotFound),
+			"errorCode":    "404",             // Use http.StatusNotFound in production
+			"errorMessage": "Not Found",       // Removed as it would return same val: http.StatusText(http.StatusNotFound),
+			"title":        "404 - Not Found", // Should be both http.StatusNotFound and http.StatusText concatinated
 		})
 	})
 

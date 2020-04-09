@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{ .title }}</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/main.css" />
-
-    <meta property="og:title" content="The Fifth Site - Error" />
-    <meta property="og:description" content="{{ .errorCode }} - {{ .errorMessage }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://5th.site" />
-    <meta name="theme-color" content="#fc2525" />
+    {{ template "head" }}
   </head>
   <body>
     <nav>
-      <div class="nav-left">{{ .errorCode }} - {{ .errorMessage }}</div>
+      <div class="nav-left">{{ .title }}</div>
     </nav>
     <div class="head-container">
       <h1 class="page-title">{{ .errorMessage }}</h1>
@@ -26,13 +15,6 @@
       </p>
     </div>
     
-    <footer>
-      © 2020 The Fifth Site Contributors
-      <br />
-      This site is open-source; contribute <a href="https://github.com/elitisgroup/5g">here</a>! <br /><br />
-      We are in no way affiliated with the government or any network providers.
-      <br />
-      Absolutely everyone is able to contribute to or host this website.
-    </footer>
+    {{ template "footer" }}
   </body>
 </html>

@@ -80,13 +80,17 @@ h1 {
 }
 
 [data-theme="dark"] h1 {
-  border-bottom: 1px solid #121212;
+  border-bottom: 1px solid #000000;
 }
 
 .page-title {
   font-size: 7vh;
   margin: 0 0 5vh 0;
   padding-top: 42vh;
+}
+
+[data-theme="dark"] .page-title {
+  border-bottom: 1px solid #121212;
 }
 
 h2 {

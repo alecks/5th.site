@@ -12,13 +12,13 @@ You're able to contribute by making PRs (pull requests).
 To add a question/answer to the homepage, create a new file in the `points` directory.
 Make sure the contents follow that of `points/example.md`.
 
-## Hosting
+## Production
 
-While hosting the website isn't exactly required in the slightest,
+While hosting for production isn't exactly required in the slightest,
 you're able to easily with [Docker](https://hub.docker.com/r/alexeek/5g).
 
 Run the following command:
 
 ```shell script
-$ docker run -it --rm -p 80:80 --name 5g alexeek/5g
+$ docker run -d --rm -p 80:80 --name 5g alexeek/5g
 ```

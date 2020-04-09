@@ -3,10 +3,15 @@ body,
 html {
   margin: 0;
   font-family: "roboto", sans-serif;
+  color: #000000;
   overflow-x: hidden;
   text-align: center;
   font-size: 14px;
-  background-color: white;
+  background-color: #ffffff;
+}
+
+[data-theme="dark"] body, html {
+  background-color: #121212 !important;
 }
 
 nav {
@@ -20,6 +25,11 @@ nav {
   font-size: 2vh;
 }
 
+[data-theme="dark"] nav {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .head-container {
   height: 100vh;
   width: 100vw;
@@ -28,10 +38,28 @@ nav {
   text-align: center;
 }
 
+[data-theme="dark"] .head-container {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.text-bg {
+  background-color: #ffffff;
+}
+
+[data-theme="dark"] .text-bg {
+  background-color: #121212;
+}
+
 .text-area {
-  width: 60%;
   text-align: left;
+  width: 60%;
   display: inline-block;
+}
+
+[data-theme="dark"] .text-area {
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .q-cont {
@@ -39,11 +67,20 @@ nav {
   margin: 0;
 }
 
+[data-theme="dark"] .q-cont {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 h1 {
   margin: 0 0 3vh 0;
   padding: 0 0 2vh 0;
   font-size: 4vh;
   border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+[data-theme="dark"] h1 {
+  border-bottom: 1px solid #121212;
 }
 
 .page-title {
@@ -68,6 +105,10 @@ p {
   font-weight: 300;
 }
 
+[data-theme="dark"] p {
+  color: #ffffff;
+}
+
 img {
   border-radius: 2vh;
   height: auto;
@@ -89,11 +130,32 @@ em {
   font-style: italic;
 }
 
+[data-theme="dark"] em {
+  color: #ffffff;
+}
+
 footer {
   padding: 2.5vh 0 2.5vh 0;
   width: 100vw;
   font-size: 2vh;
   background-color: rgb(238, 238, 238);
+}
+
+[data-theme="dark"] footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+[data-theme="dark"] a:visited {
+  color: #03DAC6;
+}
+
+[data-theme="dark"] a {
+  color: #BB86FC;
+}
+
+[data-theme="dark"] a:active {
+  color: #3700B3;
 }
 
 @media only screen and (max-width: 700px) {

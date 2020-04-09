@@ -16,12 +16,14 @@
         This is simply to prove them wrong.
       </p>
     </div>
-    <div class="text-area">
-      {{ range $id, $content := .points }}
-      <div class="q-cont" id="{{ $id }}">
-        {{ $content }}
+    <div class="text-bg">
+      <div class="text-area">
+        {{ range $id, $content := .points }}
+        <div class="q-cont" id="{{ $id }}">
+          {{ $content }}
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
     {{ template "footer" }}
   </body>

@@ -1,10 +1,3 @@
----
-name: Pull request
-about: Contribute to the project
-title: "..."
-
----
-
 **Related problem** (If applicable)
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 

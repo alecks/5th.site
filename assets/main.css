@@ -70,7 +70,8 @@ p {
 
 img {
   border-radius: 2vh;
-  max-height: 50vh;
+  height: auto;
+  max-width: 60%;
   align-self: center;
   transition: 0.1s;
 }
@@ -89,8 +90,9 @@ em {
 }
 
 footer {
-  padding: 2vh;
+  padding: 2em;
   width: 100vw;
+  font-size: 2vh;
   background-color: rgb(238, 238, 238);
 }
 

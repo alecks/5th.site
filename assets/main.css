@@ -1,92 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;300&display=swap');
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'roboto', sans-serif;
-    overflow-x: hidden;
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;300&display=swap");
+body,
+html {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
 }
 
 nav {
-    height: 7.5vh;
-    width: 100vw;
-    border-bottom: 1px solid rgb(228, 225, 225);
-    position: fixed;
-    background-color: white;
-    text-align: left;
-}
-
-.nav-left {
-    height: 100%;
-    padding:1.5%;
-    display: inline-block;
+  height: auto;
+  padding: 1.5vw 1.5vh;
+  width: 100vw;
+  background-color: white;
+  border-bottom: 1px solid rgb(228, 225, 225);
+  position: fixed;
+  text-align: left;
+  font-size: 2.2vh;
 }
 
 .head-container {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(238, 238, 238);
-    position: inherit;
-    text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(238, 238, 238);
+  position: inherit;
+  text-align: center;
 }
 
 .text-area {
-    height: 100%;
-    width: 50vw;
-    text-align: left;
-    display: inline-block;
+  width: 60%;
+  text-align: left;
+  display: inline-block;
 }
 
 .q-cont {
-    padding: 3% 0% 0% 0%;
-    margin: 0;
+  padding: 3% 0 0 0;
+  margin: 0;
 }
 
 h1 {
-    margin: 0;
-    padding: 0% 0% 2% 0%;
+  margin: 0 0 3vh 0;
+  padding: 0 0 2vh 0;
+  font-size: 5vh;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
 
-    font-size: 25pt;
-    border-bottom: 1px solid rgb(228, 225, 225);
+.page-title {
+    font-size: 10vh;
+    margin: 0 0 5vh 0;
+    padding-top: 42vh;
 }
 
 h2 {
-    margin: 0;
-    padding: 2% 0% 2% 0%;
+  margin: 0;
+  padding: 0 0 2vh 0;
 
-    font-size: 14pt;
-    font-weight: 500;
+  font-size: 3.5vh;
+  font-weight: 500;
 }
 
 p {
-    margin: 0;
-    padding: 0% 0% 2% 0%; 
+  margin: 0;
+  padding: 0 0 2vh 0;
 
-    font-size: 13pt;
-    font-weight: 300;
+  font-size: 2.5vh;
+  font-weight: 300;
 }
 
 img {
-    border-radius: 2%;
-    width: 50vw;
-    align-self: center;
+  border-radius: 2vh;
+  max-height: 50vh;
+  align-self: center;
+  transition: 0.1s;
+}
+img:hover {
+  border-radius: 1vh;
+  transition: 0.2s;
 }
 
 em {
-    margin: 0;
-    padding: 0.2% 0% 0% 1%;
+  margin: 0;
+  padding: 0.2% 0 0 1%;
 
-    font-size: 10pt;
-    font-weight: 500;
-    font-style: italic;
+  font-size: 2vh;
+  font-weight: 500;
+  font-style: italic;
 }
 
 footer {
-    height: 25vh;
-    width: 100vw;
-    background-color: rgb(238, 238, 238);
+  padding: 2vh;
+  width: 100vw;
+  background-color: rgb(238, 238, 238);
 }
 
 @media only screen and (max-width: 700px) {
-    .text-area{width: 95vw;}
+  .text-area {
+    width: 95vw;
+  }
 }

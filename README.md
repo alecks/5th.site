@@ -25,7 +25,7 @@ Frontend testing, however, needs to be done by you. The instructions to do this 
 1. Install Go - you can download it [here](https://golang.org/dl);
 2. Run `go get .` in the repository's directory (assuming that you cloned it);
 3. Run `go run .` in the repo directory. You may need to run this as the superuser (`sudo`);
-4. Visit http://localhost and check if it looks alright.
+4. Visit http://localhost, check if the page looks alright, then screenshot it.
 
 ## Production
 

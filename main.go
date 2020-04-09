@@ -46,6 +46,14 @@ func main() {
 	r.GET("/assets/:file", func(c *gin.Context) {
 		c.File(path.Join("assets", c.Param("file")))
 	})
+	// Handle 404
+	// TODO: Handle all errors like this
+	r.NoRoute(func(c *gin.Context) {
+		c.HTML(http.StatusNotFound, "error.html", map[string]interface{}{
+			"errorCode":    http.StatusNotFound,
+			"errorMessage": "Not Found", // Removed as it would return same val: http.StatusText(http.StatusNotFound),
+		})
+	})
 
 	// Start server
 	chk(r.Run(":80"))

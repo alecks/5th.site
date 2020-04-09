@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .errorCode }} - {{ .errorMessage }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+    <link rel="stylesheet" href="/assets/main.css">
+
+    <meta property="og:title" content="The Fifth Site - {{ .errorCode }}">
+    <meta property="og:description" content="{{ .errorMessage }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://5th.site">
+    <meta name="theme-color" content="#fc2525">
+</head>
+<body>
+<nav>
+    <div class="nav-left">{{ .errorCode }} - {{ .errorMessage }}</div>
+</nav>
+<div class="head-container">
+    <!-- TODO: Improve -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>{{ .errorMessage }}</h1>
+    <br />
+    <br />
+    <p>
+        Uhh... there was an error.
+        <br />
+        HTTP/{{ .errorCode }}
+    </p>
+    <img src="/assets/5gmast.jpeg" alt="5G mast">
+</div>
+
+<footer>
+    <!-- TODO: Improve -->
+    <br />
+    <br />
+    <br />
+    © 2020 The Fifth Site Contributors
+    <br />
+    This site is open-source; contribute <a href="https://github.com/elitisgroup/5g">here</a>!
+    <br /><br />
+    We are in no way affiliated with the government or any network providers.
+    <br />
+    Absolutely everyone is able to contribute to or host this website.
+</footer>
+</body>
+</html>

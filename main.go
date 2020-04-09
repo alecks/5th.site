@@ -18,7 +18,6 @@ func main() {
 	r := gin.Default()
 	r.Delims("{{", "}}")
 
-	// TODO: add options
 	md = markdown.New(markdown.HTML(true))
 
 	dir, err := ioutil.ReadDir("views")

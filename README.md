@@ -14,12 +14,11 @@ Make sure the content follows that of `sections/example.md`.
 
 ## Testing
 
-Making a contribution requires testing three things:
+Making a contribution requires testing two things:
 - Frontend - checking if the website looks okay;
-- Build - checking if the Rust code builds;
-- Security - making sure no LGTM errors are outputted.
+- Build - checking if the Rust code builds.
 
-The last two - build and security checking - are done automatically when you create a PR (pull request).
+Building is done automatically when you create a pull request.
 
 Frontend testing, however, needs to be done by you. The instructions to do this are as follows:
 1. Install Rust - you can get it [here](https://www.rust-lang.org/tools/install);

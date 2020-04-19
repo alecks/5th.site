@@ -24,7 +24,7 @@ The last two - build and security checking - are done automatically when you cre
 Frontend testing, however, needs to be done by you. The instructions to do this are as follows:
 1. Install Rust - you can get it [here](https://www.rust-lang.org/tools/install);
 2. Run `FIFTHSITE_PORT=8080 cargo run` in the repo directory. If `{ code: 13, kind: PermissionDenied, message: "Permission denied" }` is thrown, run it as sudo;
-3. Visit http://localhost, check if the page looks alright, then screenshot it.
+3. Visit http://localhost:8080, check if the page looks alright, then screenshot it.
 
 ## Production
 

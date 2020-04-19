@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> header }}
+
+<body>
+  <nav>
+    <div class="nav-left">{{ title }}</div>
+  </nav>
+  <div class="head-container">
+    <h1 class="page-title">5G doesn't fry your brain.</h1>
+    <p>
+      People think 5G will fry their children.
+      <br />
+      This is simply to prove them wrong.
+    </p>
+  </div>
+  <div class="text-bg">
+    <div class="text-area">
+      {{ #each sections as |section| }}
+      <div class="q-cont">
+        {{{ section }}}
+      </div>
+      {{ /each }}
+    </div>
+  </div>
+  {{> footer }}
+</body>
+
+</html>

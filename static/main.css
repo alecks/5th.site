@@ -10,7 +10,8 @@ html {
   background-color: #ffffff;
 }
 
-[data-theme="dark"] body, html {
+[data-theme="dark"] body,
+html {
   background-color: #121212 !important;
 }
 
@@ -151,15 +152,15 @@ footer {
 }
 
 [data-theme="dark"] a:visited {
-  color: #03DAC6;
+  color: #03dac6;
 }
 
 [data-theme="dark"] a {
-  color: #BB86FC;
+  color: #bb86fc;
 }
 
 [data-theme="dark"] a:active {
-  color: #3700B3;
+  color: #3700b3;
 }
 
 @media only screen and (max-width: 700px) {

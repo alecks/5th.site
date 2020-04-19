@@ -5,7 +5,7 @@
 All types of electromagnetic radiation fall on the Electromagnetic Spectrum. When looking at it, one may be shocked to see that 5G and other communications fall scarily close to the frequency of microwaves. However, the radiation spectrum is logarithmic and mmwave 5G falls at around 100GHz compared to an an average microwave at 300GHz. Mid-band 5G (sub-6GHz) is even safer and is comparable to mid-band 4G at 2.5-3.5GHz.
 
 
-![BBC Electromagnetic Spectrum](/assets/5G_Labelled_EM_Spectrum.png)
+![BBC Electromagnetic Spectrum](/static/img/spectrum.png)
 
 *Courtesy of BBC/SCAMP/Imperial College London/EBU*
 
